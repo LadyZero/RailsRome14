@@ -1,0 +1,6 @@
+<!--<h1>FrontEnd#question</h1>
+<p>Find me in app/views/front_end/question.html.erb</p>-->
+<h1><%= @quiz.subject %></h1>
+<h2><%= @quiz.question %></h2>
+<h3><%= image_tag @quiz.image_url %></h3>
+<%= render partial: 'answer', collection: @quiz.answers %>
